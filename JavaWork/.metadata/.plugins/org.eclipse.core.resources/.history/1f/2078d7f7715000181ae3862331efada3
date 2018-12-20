@@ -1,0 +1,20 @@
+import java.util.Date;
+
+public class DateDemo1 {
+	
+	public static void main(String[] args) {
+		
+		Date date = new Date();
+		
+		// 顯示所有日期與時間的信息 %tc
+		System.out.printf("信息: %tc%n", date);
+		
+		// 顯示月/日/年的格式 %tD
+		System.out.printf("月/日/年格式: %tD%n", date);
+		
+		// 顯示年-月-日的格式 %tF
+		System.out.printf("年-月-日格式: %tF%n", date);
+		
+	}
+
+}

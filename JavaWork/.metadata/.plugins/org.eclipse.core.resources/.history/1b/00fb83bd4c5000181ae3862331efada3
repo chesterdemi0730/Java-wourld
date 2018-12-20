@@ -1,0 +1,14 @@
+
+public class formatDemo {
+	
+	public static void main(String[] args) {
+		
+		String str = null;
+		
+		str = String.format("Hello, %s", "ด๚ธี");
+		
+		System.out.println(str);
+		
+	}
+
+}

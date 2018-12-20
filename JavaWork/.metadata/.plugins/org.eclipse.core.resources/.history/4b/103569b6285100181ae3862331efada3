@@ -1,0 +1,14 @@
+import java.util.Date;
+import java.util.Locale;
+
+public class TimeDemo {
+	
+	public static void main(String[] args) {
+		
+		Date date = new Date();
+		
+		String str = String.format(Locale.US, "小寫字母的上午下午標記: %tp" , date);
+		System.out.println(str);
+		
+	}
+}

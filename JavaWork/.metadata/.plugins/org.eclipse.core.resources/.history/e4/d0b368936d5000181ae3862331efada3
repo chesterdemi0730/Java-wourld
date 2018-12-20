@@ -1,0 +1,37 @@
+
+public class formatDemo {
+	
+	public static void main(String[] args) {
+		String str = null;
+		
+		str = String.format("Hello, %s", "測試");
+		
+		System.out.println(str);
+		
+		// 字符類型 %c
+		System.out.printf("字符: %c%n" , 'A');
+		// 布爾類型 %b
+		System.out.printf("5<2,結果: %b%n" , 5<2);
+		// 整數類型(十進制) %d
+		System.out.printf("500的一半是: %d%n", 500/2);
+		// 整數類型(十六進制) %x
+		System.out.printf("500的16進制是: %x%n", 500);
+		// 整數類型(八進制) %o
+		System.out.printf("500的8進制是: %o%n", 500);
+		// 浮點數類型 %f 無設定小數點
+		System.out.printf("3000元打9.1折是: %.f%n", 3000*0.91);
+		// 浮點數類型 %f 設定小數點,0就是顯示0位數
+		System.out.printf("3000元打9.1折是: %.0f%n", 3000*0.91);
+		// 浮點數類型(十六進制) %a
+		System.out.printf("3000元的16進制是: %a%n", 3000*0.091);
+		// 指數類型 %e
+		System.out.printf("3000元的指數是: %e%n", 3000*0.091);
+		// 通用浮點數 %g
+		System.out.printf("3000元的指數和浮點數結果的長度較短的是: %g%n", 3000*0.91);
+		// 散列碼 %h
+		System.out.printf("字母A的散列碼是: %h%n", 'A');
+		// 百分比類型 %
+		System.out.printf("3000元的折扣是: %d%%%n", 85);
+	}
+
+}

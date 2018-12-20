@@ -1,0 +1,26 @@
+
+public class FromatDemo {
+	public static void main(String[] args) {
+		
+		
+		   String str=null;  
+		   
+		   // Αて才﹃  
+		   str=String.format("Α把计$ㄏノ%2$d,%1$s", 99,"abc");  
+		  
+		   // 块才﹃跑秖  
+		   System.out.println(str);  
+		  
+		   System.out.printf("陪ボタ璽计才腹%+d籔%d%n", 99,-99);  
+		  
+		   System.out.printf("程絪腹琌%03d%n", 7);  
+		  
+		   System.out.printf("Tab龄狦琌% 8d%n", 7);  
+		  
+		   System.out.printf("俱计だ舱狦琌%,d%n", 9989997);  
+		  
+		   System.out.printf("セ基琌%2.2fじ%n", 49.8); 
+		
+	}
+
+}

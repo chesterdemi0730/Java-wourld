@@ -1,0 +1,18 @@
+
+public class formatDemo {
+	
+	public static void main(String[] args) {
+		String str = null;
+		
+		str = String.format("Hello, %s", "´ú¸Õ");
+		
+		System.out.println(str);
+		
+		
+		System.out.printf("¦r²Å: %c%n" , 'A');
+		
+		System.out.printf("µ²ªG: %b%n" , 3>=5);
+		
+	}
+
+}

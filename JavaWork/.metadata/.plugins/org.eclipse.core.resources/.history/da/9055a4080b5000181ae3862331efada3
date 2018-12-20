@@ -1,0 +1,33 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class DateDemo {
+	
+	public static void main(String[] args) throws ParseException {
+		
+		// 準備輸出的格式 , 如: March 2018/05/05
+		SimpleDateFormat sdf = new SimpleDateFormat("E yyyy/MM/dd");
+		
+		// 利用DateFormat 來parse Date'string
+		DateFormat df = DateFormat.getDateInstance();
+		Date date = df.parse("2019/01/01");
+		
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		System.out.println(sdf.format(calendar.getTime()));
+		
+		// Set date
+		calendar.set(2019, calendar.JANUARY , 1);
+		System.out.println(sdf.format(calendar.getTime()));
+		
+		// 直接格式化輸出 now date&time
+		SimpleDateFormat sdFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss.SSS");
+		Date current = new Date();
+		System.out.println(sdFormat.format(current));
+		
+	}
+
+}

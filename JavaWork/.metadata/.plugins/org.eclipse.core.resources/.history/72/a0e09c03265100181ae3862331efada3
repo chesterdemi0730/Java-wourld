@@ -1,0 +1,17 @@
+import java.util.Date;
+import java.util.Locale;
+
+public class DateDemo2 {
+	
+	public static void main(String[] args) {
+		
+		Date date = new Date();
+		
+		String str = String.format(Locale.US, "英文月份簡稱: %tb",date);
+		
+		System.out.println(str);
+		
+		
+	}
+
+}
